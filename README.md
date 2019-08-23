@@ -3,21 +3,20 @@ Dockerfile repository for a docker image which opens a jupyter notebook server, 
 
 Pull from dockerhub at https://hub.docker.com/r/pmorris2012/openpose-jupyter
 
-Steps to use:
-1. Install a version of the NVIDIA graphics driver compatible with CUDA 10.0+
-2. Install nvidia-docker
-
 
 ## DOWNLOAD AND RUN CONTAINER
 
-replace [PORT] and [PATH] before running, then go to ```localhost:[PORT]``` in your browser to access the notebook server.
+- [PORT]: the port the jupyter notebook server will be accessible on outside the container.
+- [PATH]: The local path where your data/code is stored.
 ```
 docker run --gpus all -it -p [PORT]:8888 -v [PATH]:/external pmorris2012/openpose-jupyter
 ```
+Go to ```localhost:[PORT]``` in your browser to access the notebook server.
 
 ## SETUP ON UBUNTU
 
 1. Install Nvidia graphics driver from the `ppa:graphics-drivers/ppa` repository.
+- [VERSION]: the version of the nvidia driver you want to install.
 ```
 sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt update
@@ -30,6 +29,7 @@ sudo apt install nvidia-[VERSION]
 https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-engine---community-1
 
 3. (Optional) Run docker with without needing root access (don't have to type sudo)
+- [USER]: your username
 ```
 sudo groupadd docker
 sudo gpasswd -a [USER] docker
