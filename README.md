@@ -15,11 +15,12 @@ Go to ```localhost:[PORT]``` in your browser to access the notebook server.
 
 ## DOCKER SETUP ON UBUNTU
 
-1. Install Nvidia graphics driver from the `ppa:graphics-drivers/ppa` repository.
+1. Install Nvidia graphics driver from the `ppa:graphics-drivers/ppa` repository. Reboot after this step.
 - [VERSION]: the version of the nvidia driver you want to install.
 ```
-sudo add-apt-repository ppa:graphics-drivers/ppa
-sudo apt update
+sudo apt-get purge nvidia*
+sudo add-apt-repository ppa:graphics-drivers
+sudo apt-get update
 ubuntu-drivers devices
 sudo apt install nvidia-[VERSION]
 ```
