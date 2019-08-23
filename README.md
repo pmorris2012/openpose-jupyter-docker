@@ -1,7 +1,7 @@
 # openpose-jupyter-docker
 Dockerfile repository for a docker image which opens a jupyter notebook server, configured to preprocess image/video data using OpenPose.
 
-View on github at https://github.com/pmorris2012/openpose-jupyter-docker
+View Dockerfile on github at https://github.com/pmorris2012/openpose-jupyter-docker
 
 Pull from dockerhub at https://hub.docker.com/r/pmorris2012/openpose-jupyter
 
