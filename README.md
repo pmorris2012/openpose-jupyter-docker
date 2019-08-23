@@ -13,7 +13,7 @@ docker run --gpus all -it -p [PORT]:8888 -v [PATH]:/external pmorris2012/openpos
 ```
 Go to ```localhost:[PORT]``` in your browser to access the notebook server.
 
-## SETUP ON UBUNTU
+## DOCKER SETUP ON UBUNTU
 
 1. Install Nvidia graphics driver from the `ppa:graphics-drivers/ppa` repository.
 - [VERSION]: the version of the nvidia driver you want to install.
