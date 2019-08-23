@@ -1,28 +1,7 @@
 FROM cwaffles/openpose-python
 MAINTAINER Paul Morris (pmorris2012@fau.edu)
 
-#commmands for PIMS
-
-#add universe repository
 RUN apt-get update
-#RUN apt-get install software-properties-common
-#RUN add-apt-repository universe
-
-#dependencies
-
-RUN pip3 install slicerator
-RUN pip3 install imageio
-RUN pip3 install scikit-image
-
-RUN apt-get install -y python-dev pkg-config
-RUN apt-get install -y \
-    libavformat-dev libavcodec-dev libavdevice-dev \
-    libavutil-dev libswscale-dev libswresample-dev libavfilter-dev
-
-RUN pip3 install --upgrade av
-
-#install PIMS
-RUN pip3 install https://github.com/soft-matter/pims/archive/master.zip
 
 #commands to configure openpose
 
