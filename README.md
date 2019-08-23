@@ -26,6 +26,7 @@ sudo apt install nvidia-[VERSION]
 ```
 
 2. Install docker CE using the instructions here
+
 https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-engine---community-1
 
 3. (Optional) Run docker with without needing root access (don't have to type sudo)
@@ -36,6 +37,7 @@ newgrp docker
 ```
 
 4. Install the nvidia-docker runtime, and follow the instructions for use here
+
 https://github.com/NVIDIA/nvidia-docker
 
 
