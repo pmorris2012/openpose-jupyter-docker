@@ -1,4 +1,4 @@
-# openpose_jupyter_docker
+# openpose-jupyter-docker
 Dockerfile repository for a docker image which opens a jupyter notebook server, configured to preprocess image/video data using OpenPose.
 
 Pull from dockerhub at https://hub.docker.com/r/pmorris2012/openpose-jupyter
@@ -10,7 +10,7 @@ Steps to use:
 
 ## DOWNLOAD AND RUN CONTAINER
 
-replace [PORT] and [PATH] before running
+replace [PORT] and [PATH] before running, then go to ```localhost:[PORT]``` in your browser to access the notebook server.
 ```
 docker run --gpus all -it -p [PORT]:8888 -v [PATH]:/external pmorris2012/openpose-jupyter
 ```
